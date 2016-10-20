@@ -109,7 +109,7 @@ export default class Google extends Plugin {
    * @return {Promise} authentication status
    */
   checkAuthentication () {
-    return fetch(`${this.opts.host}/drive/authorize`, {
+    return fetch(`${this.opts.host}/drive/auth`, {
       method: 'get',
       credentials: 'include',
       headers: {
